@@ -1188,13 +1188,21 @@ footer h3 {
   border: none;
   background-color: black;
   color: white;
-  font-size: 20px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   z-index: 2;
   border: none;
   border-radius: 50%;
   opacity: 0.5;
   cursor: pointer;
   transition: 0.6;
+}
+.slider .slider_osnova .btn_slider span {
+  display: block;
+  width: 100%;
+  font-size: 15px;
 }
 .slider .slider_osnova .btn_slider:hover {
   opacity: 1;
