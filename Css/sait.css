@@ -764,9 +764,6 @@ footer h3 {
   display: none;
   z-index: 4;
   transition: 0.4s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .scroll:hover {
   background-color: black;
@@ -1047,7 +1044,7 @@ footer h3 {
 }
 @media (max-width: 340px) {
   .scroll:hover {
-    background-color: #f1f1f1;
+    background: #4d5057;
   }
   .scroll .scroll_up:hover {
     transform: rotate(270deg);
