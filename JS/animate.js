@@ -1,5 +1,4 @@
 //animation blocks
-
 (function Animate() {
   const info_schedule = document.querySelectorAll(".info_schedule");
   const photo_schedule = document.querySelectorAll(".photo_schedule");

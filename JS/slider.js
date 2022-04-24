@@ -44,6 +44,8 @@
       section_opportunities.classList.add("active");
     }
   };
+
+  // перетаскивание слайдов по пальцам свайпов
   right.onclick = () => {
     counter++;
     for (let i = 0; i < slide.length; i++) {
@@ -66,6 +68,52 @@
       slide[i].style.left = -(350 * counter) + "px";
     }
   };
+
+  // touch swipe
+  let startX = 0;
+  let isBool = false;
+  let endX = 0;
+  const slider = document.querySelector(".slider");
+  slider.addEventListener("touchstart", (e) => {
+    startX = e.changedTouches[0].clientX;
+    isBool = true;
+  });
+  slider.addEventListener("touchmove", (e) => {
+    if (isBool) {
+      endX = e.changedTouches[0].clientX;
+      if (endX - startX > 0) {
+        left.click();
+      }
+      if (endX - startX < 0) {
+        right.click();
+      }
+
+      isBool = false;
+    }
+  });
+  slider.addEventListener("touchend", (e) => {
+    isBool = false;
+  });
+  slider.addEventListener("mousedown", (e) => {
+    startX = e.clientX;
+    isBool = true;
+  });
+  slider.addEventListener("mousemove", (e) => {
+    if (isBool) {
+      endX = e.clientX;
+      if (endX - startX > 0) {
+        left.click();
+      }
+      if (endX - startX < 0) {
+        right.click();
+      }
+
+      isBool = false;
+    }
+  });
+  slider.addEventListener("mouseup", (e) => {
+    isBool = false;
+  });
 })();
 const info_schedule = document.querySelectorAll(".info_schedule");
 const photo_schedule = document.querySelectorAll(".photo_schedule");
