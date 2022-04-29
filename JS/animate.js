@@ -1,4 +1,5 @@
 //animation blocks
+
 (function Animate() {
   const info_schedule = document.querySelectorAll(".info_schedule");
   const photo_schedule = document.querySelectorAll(".photo_schedule");
@@ -56,3 +57,15 @@
     });
   }
 })();
+let taba = document.querySelectorAll(".tablinks");
+let tabs_info = document.querySelectorAll(".tabcontent");
+for (let i = 0; i < taba.length; i++) {
+  taba[i].addEventListener("click", () => {
+    for (let i = 0; i < taba.length; i++) {
+      tabs_info[i].classList.remove("active");
+      taba[i].classList.remove("active");
+    }
+    tabs_info[i].classList.add("active");
+     taba[i].classList.add("active");
+  });
+}
