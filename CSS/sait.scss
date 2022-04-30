@@ -295,32 +295,26 @@ img {
     }
   }
 }
-
 .main {
   background-image: url("../Pictures/main/main.svg");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 160px 0;
-
   .main__osnova__info {
     .info {
       font-size: 46px;
       font-weight: 500;
       margin-bottom: 32px;
     }
-s
     p {
       margin-bottom: 16px;
       font-size: 18px;
     }
-
     img {
       width: 100%;
     }
-
     max-width: 800px;
     color: white;
-
     .btn {
       display: inline-block;
       margin-top: 10px;
