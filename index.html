@@ -7,12 +7,14 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="CSS/sait.css">
    <link rel="icon" type="image/png" sizes="32x32" href="https://shifton.com/static/favicons/favicon-32x32.png">
-   <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@400;500;700&family=Poppins&display=swap"
       rel="stylesheet">
    <title>Shifton</title>
 </head>
+
 <body>
+   <!-- header -->
    <header class="header">
       <div class="container">
          <div class="wrapper">
@@ -74,8 +76,8 @@
       </form>
    </div>
    </div>
-
    <div class="all_display_none">
+      <!-- main -->
       <main class="main">
          <div class="container">
             <div class="wrapper">
@@ -93,6 +95,7 @@
             </div>
          </div>
       </main>
+      <!--section -->
       <section class="section_opportunities">
          <div class="container">
             <div class="wrapper">
@@ -179,6 +182,7 @@
             </div>
          </div>
       </section>
+      <!-- article -->
       <article class="article_one">
          <div class="container">
             <div class="wrapper">
@@ -336,11 +340,11 @@
             <div class="tab">
                <button class="tablinks active"> Работы</button>
                <button class="tablinks">Школы</button>
-               <button class="tablinks"> 
+               <button class="tablinks">
                   Курсов
-         </button>
+               </button>
             </div>
-           
+
             <div class="information">
                <div class="tabcontent active">
                   <h3>Для работы</h3>
@@ -349,7 +353,7 @@
                <div class="tabcontent">
                   <h3>Для школы</h3>
                   <p>
-                     Составление домашних заданий и проверка их выполнения. 
+                     Составление домашних заданий и проверка их выполнения.
 
                   </p>
                </div>
@@ -357,12 +361,19 @@
                <div class="tabcontent">
                   <h3>Для курсов</h3>
                   <p>
-                  Для курсов и курсовой работы мы предлагаем вам настроить планирование работы и проверку выполнения заданий.
-
+                     Для курсов и курсовой работы мы предлагаем вам настроить планирование работы и проверку выполнения
+                     заданий.
                   </p>
                </div>
             </div>
          </div>
+      </div>
+      <div class="button_section_view">
+         <a href="https://app.shifton.com/registration?lang=ru">
+         <button>
+         Перейте на календарь
+         </button>
+         </a>
       </div>
    </div>
    <div class="section_infomation">
@@ -372,8 +383,7 @@
                <h1 class="info">
                   Полезные статьи от команды Shifton
                </h1>
-
-               <div class="post">
+               <!--          <div class="post">
                   <div class="text">
                      Как решить распространенные проблемы с составлением рабочих расписаний
                   </div>
@@ -415,24 +425,26 @@
                      увеличить доход вашей
                      компании.
                   </div>
-               </div>
+               </div> -->
             </div>
          </div>
       </div>
    </div>
+   <!-- footer -->
    <footer>
       <div class="container">
          <div class="wrapper">
             <ul class="nav_footer">
-               <li> <a href="#">Возможности</a></li>
-               <li> <a href="#">Блог</a></li>
-               <li> <a href="#">ЧАВО</a></li>
+               <li> <a  class=" open_slider">Возможности</a></li>
+               <li> <a class="open_blog">Блог</a></li>
+               <li> <a href="#">Главная</a></li>
             </ul>
             <hr>
             <div class="google_apple">
                <a href="https://play.google.com/store?hl=ru&gl=US"><img src="Pictures/icons_social/google_play.svg"
                      alt="google"></a>
-               <a href="https://www.apple.com/ru/app-store/"><img src="Pictures/icons_social/App_Store.svg" alt="App_Store"></a>
+               <a href="https://www.apple.com/ru/app-store/"><img src="Pictures/icons_social/App_Store.svg"
+                     alt="App_Store"></a>
             </div>
             <h3>Copyright 2017-2021, Shifton. All rights reserved.<br>
                Privacy Policy | Terms of Use | Сookies
@@ -459,32 +471,68 @@
    <div class="scroll">
       <p class="scroll_up"> &#10095; </p>
    </div>
-   <div class="sign">
-      <span class="close close-sign">&times;</span>
-      <form class="modal-content">
-         <div class="container">
-            <h1>Вход</h1>
-            <hr>
-            <label for="email"><b>Email</b></label>
-            <input type="text" placeholder=" Ведите Email" name="email" required>
+      <div class="sign">
+         <span class="close close-sign">&times;</span>
+         <form class="modal-content">
+            <div class="container">
+               <h1>Вход</h1>
+               <hr>
+               <label for="email"><b>Email</b></label>
+               <input type="text" placeholder=" Ведите Email" name="email" required>
 
-            <label for="psw"><b>Пароль</b></label>
-            <input type="password" placeholder=" Ведите пароль" name="psw" required>
+               <label for="psw"><b>Пароль</b></label>
+               <input type="password" placeholder=" Ведите пароль" name="psw" required>
 
 
-            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Запомнить меня
-            </label>
-            <p class="register_btn menu_registration1">Зарегистирироваться</p>
-            <div class="clearfix">
-               <button type="button" class="cancelbtn closing_form2">Отменить</button>
-               <button type="submit" class="signupbtn">Вход</button>
-            </div>
-      </form>
-   </div>
+               <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Запомнить меня
+               </label>
+               <p class="register_btn menu_registration1">Зарегистирироваться</p>
+               <div class="clearfix">
+                  <button type="button" class="cancelbtn closing_form2">Отменить</button>
+                  <button type="submit" class="signupbtn">Вход</button>
+               </div>
+         </form>
+      </div>
 
 </body>
+
 <script src="JS/home.js"></script>
 <script src="JS/slider.js"></script>
 <script src="JS/animate.js"></script>
+<script>
+   var xmlhttp = new XMLHttpRequest();
+   var path = "XML/data.xml";
+   xmlhttp.open("GET", path, true);
+   xmlhttp.send();
+   xmlhttp.onreadystatechange = function () {
+      if (this.readyState == 4 && this.status == 200) {
+         var xmlDoc = this.responseXML;
+         var x = xmlDoc.getElementsByTagName("string");
+         console.log(x);
+         for (i = 0; i < x.length; i++) {
+            let id = x[i].getElementsByTagName("id")[0].childNodes[0].nodeValue;
+            let title = x[i].getElementsByTagName("title")[0].childNodes[0].nodeValue;
+            let description = x[i].getElementsByTagName("description")[0].childNodes[0].nodeValue;
+            let img = x[i].getElementsByTagName("img")[0].childNodes[0].nodeValue;
+            let alt = x[i].getElementsByTagName("alt")[0].childNodes[0].nodeValue;
+            var div = `
+            <div class="post">
+                <div class="text">
+                    ${title}
+                  </div>
+                  <div class="img_post">
+                     </div>
+                     <img src=${img} alt=${alt}>
+                  <div class="text_p">
+                     ${description}
+                  </div>
+               </div>`
+            document.querySelector(".posts").innerHTML += div;
+         }
+      }
+   }
+
+</script>
+
 
 </html>

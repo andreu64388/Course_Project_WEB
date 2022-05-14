@@ -66,6 +66,6 @@ for (let i = 0; i < taba.length; i++) {
       taba[i].classList.remove("active");
     }
     tabs_info[i].classList.add("active");
-     taba[i].classList.add("active");
+    taba[i].classList.add("active");
   });
 }

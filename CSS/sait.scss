@@ -792,6 +792,7 @@ footer {
       margin: 0 8px;
 
       a {
+        cursor: pointer;
         text-decoration: none;
         color: white;
       }
@@ -1677,7 +1678,28 @@ img {
 .menu_registration {
   cursor: pointer;
 }
+.button_section_view {
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+  a {
+    button {
+      cursor: pointer;
+      outline: none;
+      border: none;
+      background-color: #4d5057;
+      color: white;
 
+      padding: 10px;
+      border-radius: 5px;
+      transition: all 0.3s;
+      &:hover {
+        background-color: black;
+        color: white;
+      }
+    }
+  }
+}
 .tabs {
   .titile__tabs {
     text-align: center;

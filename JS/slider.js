@@ -107,7 +107,6 @@
       if (endX - startX < 0) {
         right.click();
       }
-
       isBool = false;
     }
   });
@@ -127,3 +126,8 @@ if (window.screen.width < 1024) {
   }
   section_opportunities.classList.add("active");
 }
+
+
+
+
+

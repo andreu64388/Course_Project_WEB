@@ -17,7 +17,6 @@
   const close = document.querySelector(".close");
   const close_one_form = document.querySelector(".close_one_form");
   const hide_forms = document.querySelector(".hide_forms");
-
   const menu_registration = document.querySelector(".menu_registration");
   for (let i = 0; i < menu_registration1.length; i++) {
     menu_registration1[i].addEventListener("click", () => {
@@ -31,7 +30,6 @@
   close.onclick = () => {
     hide_forms.style.display = "none";
   };
-
   close_one_form.onclick = () => {
     hide_forms.style.display = "none";
   };
@@ -138,5 +136,15 @@
       hide.classList.remove("change");
       sign.style.display = "block";
     };
+  }
+  let form = document.querySelectorAll("form");
+  for (let i = 0; i < form.length; i++) {
+    form[i].addEventListener("submit", (e) => {
+      if (form[i] === form[0]) {
+        alert("Вы успешно зарегистрировались");
+      } else {
+        alert("Вы успешно вошли");
+      }
+    });
   }
 })();
